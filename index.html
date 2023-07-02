@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__line">
+        <div class="container">
+          <div class="header__line-wrapper">
+            <div class="header__lang">
+              <a href="#">Ua</a>
+              <a href="#" class="active">En</a>
+            </div>
+            <a href="" class="header__phone">+371000000</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__block">
+            <nav class="nav">
+              <a href="#" class="nav__link active">Home</a>
+              <a href="#" class="nav__link">About</a>
+              <a href="#" class="nav__link">Menu</a>
+              <a href="#" class="nav__link">Reservation</a>
+            </nav>
+          </div>
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="logo" />
+          </a>
+          <div class="header__block right">
+            <div class="header__action">
+              <button type="button" data-modal class="header__link" href="">
+                <img src="img/profile.svg" alt="profile" />
+              </button>
+              <button type="button" class="header__link" href="">
+                <img src="img/favorite.svg" alt="favorite" />
+              </button>
+              <button
+                onclick="window.location='cart.html'"
+                type="button"
+                class="header__link"
+              >
+                <img src="img/cart.svg" alt="cart" />
+                <span class="header__link-event"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="modal">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <form action="#">
+            <div data-close class="modal__close">&times;</div>
+            <div class="modal__title">Log in</div>
+            <input
+              required
+              placeholder="First name"
+              name="name"
+              type="text"
+              class="modal__input"
+            />
+            <input
+              required
+              placeholder="Email"
+              name="email"
+              type="email"
+              class="modal__input"
+            />
+            <button class="btn btn_dark btn_min">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro" style="background-image: url('img/intro.jpg')">
+      <div class="container">
+        <div class="intro__wrapper">
+          <div class="intro__block">
+            <h1 class="intro__title">
+              Roasted coffee <br />
+              best choice
+            </h1>
+            <p class="subtitle">
+              The coffee is brewed by first roasting the green coffee beans over
+              hot <br />
+              coals in a brazier. given an opportunity to sample.
+            </p>
+            <div class="intro__actions">
+              <a class="btn btn-main" href="">Buy now</a>
+              <a class="btn btn-secondary" href="">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--intro-->
+    <div class="info">
+      <div class="container">
+        <div class="info__block">
+          <div class="info__image-wrapper">
+            <img class="info__image" src="img/info.jpg" alt="" />
+          </div>
+          <div class="info__items">
+            <div class="info__title">Roasted Coffee</div>
+            <div class="info__description">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog">
+      <div class="container">
+        <h2 class="block__title">Catalog</h2>
+        <div class="products__wrapper">
+          <div class="products__block">
+            <a class="products__item" href="coffe.html">
+              <img class="products__image" src="img/product1.png" alt="" />
+              <h3 class="product__title">Lavazza coffee</h3>
+              <div class="products__footer">
+                <div class="products__price">
+                  $19.99
+                  <del>$29.99</del>
+                </div>
+                <button type="button" class="product__favorite">
+                  <img src="img/favorite.svg" alt="" />
+                </button>
+              </div>
+            </a>
+          </div>
+
+          <div class="products__block">
+            <a class="products__item" href="coffe2.html">
+              <img class="products__image" src="img/product2.png" alt="" />
+              <h3 class="product__title">Lavazza coffee</h3>
+              <div class="products__footer">
+                <div class="products__price">
+                  $19.99
+                  <del>$29.99</del>
+                </div>
+                <button type="button" class="product__favorite">
+                  <img src="img/favorite.svg" alt="" />
+                </button>
+              </div>
+            </a>
+          </div>
+
+          <div class="products__block">
+            <a class="products__item" href="coffe.html">
+              <img class="products__image" src="img/product1.png" alt="" />
+              <h3 class="product__title">Lavazza coffee</h3>
+              <div class="products__footer">
+                <div class="products__price">
+                  $19.99
+                  <del>$29.99</del>
+                </div>
+                <button type="button" class="product__favorite">
+                  <img src="img/favorite.svg" alt="" />
+                </button>
+              </div>
+            </a>
+          </div>
+
+          <div class="products__block">
+            <a class="products__item" href="coffe.html">
+              <img class="products__image" src="img/product1.png" alt="" />
+              <h3 class="product__title">Lavazza coffee</h3>
+              <div class="products__footer">
+                <div class="products__price">
+                  $19.99
+                  <del>$29.99</del>
+                </div>
+                <button type="button" class="product__favorite">
+                  <img src="img/favorite.svg" alt="" />
+                </button>
+              </div>
+            </a>
+          </div>
+
+          <div class="products__block">
+            <a class="products__item" href="coffe2.html">
+              <img class="products__image" src="img/product2.png" alt="" />
+              <h3 class="product__title">Lavazza coffee</h3>
+              <div class="products__footer">
+                <div class="products__price">
+                  $19.99
+                  <del>$29.99</del>
+                </div>
+                <button type="button" class="product__favorite">
+                  <img src="img/favorite.svg" alt="" />
+                </button>
+              </div>
+            </a>
+          </div>
+
+          <div class="products__block">
+            <a class="products__item" href="coffe.html">
+              <img class="products__image" src="img/product1.png" alt="" />
+              <h3 class="product__title">Lavazza coffee</h3>
+              <div class="products__footer">
+                <div class="products__price">
+                  $19.99
+                  <del>$29.99</del>
+                </div>
+                <button type="button" class="product__favorite">
+                  <img src="img/favorite.svg" alt="" />
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="news">
+      <div class="container">
+        <div class="block__title">News</div>
+        <div class="news__wrapper">
+          <div class="news__block">
+            <div class="news__item" href="#">
+              <img class="news__image" src="img/news1.png" alt="" />
+              <div class="news_content">
+                <h3 class="news__title">Lavazza coffee</h3>
+                <p class="news_description">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomised words which don't look
+                  even slightly believable.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="news__block">
+            <div class="news__item" href="#">
+              <img class="news__image" src="img/news2.png" alt="" />
+              <div class="news_content">
+                <h3 class="news__title">Lavazza coffee</h3>
+                <p class="news_description">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomised words which don't look
+                  even slightly believable.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="news__block">
+            <div class="news__item" href="#">
+              <img class="news__image" src="img/news3.png" alt="" />
+              <div class="news_content">
+                <h3 class="news__title">Lavazza coffee</h3>
+                <p class="news_description">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomised words which don't look
+                  even slightly believable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__block">
+            <a class="footer__logo" href="index.html">
+              <img src="img/footer-logo.png" alt="" />
+            </a>
+          </div>
+          <div class="footer__block">
+            <nav class="nav nav-footer">
+              <a href="#" class="nav__link">Home</a>
+              <a href="#" class="nav__link">About</a>
+              <a href="#" class="nav__link">Menu</a>
+              <a href="#" class="nav__link">Reservation</a>
+            </nav>
+          </div>
+          <div class="footer__block">
+            <nav class="nav nav-footer">
+              <a href="#" class="nav__link">Contacts</a>
+              <a href="#" class="nav__link">Privacy policy</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

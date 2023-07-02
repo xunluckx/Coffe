@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__line">
+        <div class="header__container">
+          <div class="header__line-wrapper">
+            <div class="header__lang">
+              <a href="#">Ua</a>
+              <a href="#" class="active">En</a>
+            </div>
+            <a href="" class="header__phone">+371000000</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__block">
+            <nav class="nav">
+              <a href="index.html" class="nav__link active">Home</a>
+              <a href="#" class="nav__link">About</a>
+              <a href="#" class="nav__link">Menu</a>
+              <a href="#" class="nav__link">Reservation</a>
+            </nav>
+          </div>
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="logo" />
+          </a>
+          <div class="header__block right">
+            <div class="header__action">
+              <button type="button" data-modal class="header__link" href="">
+                <img src="img/profile.svg" alt="profile" />
+              </button>
+              <button type="button" class="header__link" href="">
+                <img src="img/favorite.svg" alt="favorite" />
+              </button>
+              <button
+                onclick="window.location='cart.html'"
+                type="button"
+                class="header__link"
+              >
+                <img src="img/cart.svg" alt="cart" />
+                <span class="header__link-event"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="modal">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <form action="#">
+            <div data-close class="modal__close">&times;</div>
+            <div class="modal__title">Log in</div>
+            <input
+              required
+              placeholder="First name"
+              name="name"
+              type="text"
+              class="modal__input"
+            />
+            <input
+              required
+              placeholder="Email"
+              name="email"
+              type="email"
+              class="modal__input"
+            />
+            <button class="btn btn_dark btn_min">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart">
+      <div class="container">
+        <div class="cart__title">Cart</div>
+        <div class="cart__container">
+          <div class="cart__wrapper">
+            <div class="cart__block">
+              <div class="cart__items">
+                <div class="cart__image">
+                  <img class="cart__img" src="img/product1.png" alt="" />
+                </div>
+                <div class="cart__items-left">
+                  <div class="cart__product-title">Lavazza Crema E Gusto</div>
+                  <div class="cart__product-size">xl</div>
+                  <label for="quantity"></label>
+                  <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <div class="cart__items-right">
+                  <a href="" class="cart__remove">
+                    <img src="img/remove.svg" alt="" />
+                  </a>
+                  <div class="cart__price">$19.99</div>
+                </div>
+              </div>
+
+              <div class="cart__items">
+                <div class="cart__image">
+                  <img class="cart__img" src="img/product2.png" alt="" />
+                </div>
+                <div class="cart__items-left">
+                  <div class="cart__product-title">Lavazza Crema E Gusto</div>
+                  <div class="cart__product-size">xl</div>
+                  <label for="quantity"></label>
+                  <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <div class="cart__items-right">
+                  <a href="" class="cart__remove">
+                    <img src="img/remove.svg" alt="" />
+                  </a>
+                  <div class="cart__price">$19.99</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart__info-section">
+            <div class="price__section">
+              <div class="price__title">Price:</div>
+              <div class="price__title-number">$19.99</div>
+            </div>
+            <div class="delivery__section">
+              <div class="delivery__title">Delivery:</div>
+              <div class="delivery__title-number">$19.99</div>
+            </div>
+            <div class="total__section">
+              <div class="total__title">Total price:</div>
+              <div class="total__title-number">$29.99</div>
+            </div>
+            <div class="button__section">
+              <button type="button" class="cart__button">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__wrapper">
+          <div class="footer__block">
+            <a class="footer__logo" href="index.html">
+              <img src="img/footer-logo.png" alt="" />
+            </a>
+          </div>
+          <div class="footer__block">
+            <nav class="nav nav-footer">
+              <a href="index.html" class="nav__link">Home</a>
+              <a href="#" class="nav__link">About</a>
+              <a href="#" class="nav__link">Menu</a>
+              <a href="#" class="nav__link">Reservation</a>
+            </nav>
+          </div>
+          <div class="footer__block">
+            <nav class="nav nav-footer">
+              <a href="#" class="nav__link">Contacts</a>
+              <a href="#" class="nav__link">Privacy policy</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/script.js"></script>
+</html>
